@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="Profile.css">
+    <link rel="stylesheet" href="global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Paytone+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald&family=Paytone+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-header">
+            <a href="index.html"><img src="app-logo.png"> <!--company logo--></a>
+            <span id="user-intro"></span>
+        </div>
+        <div class="right-header">
+            <a href="My Flats.html">All Flats</a>
+            <a href="Add Flat.html">Add Flat</a>
+            <a href="Profile.html">Profile</a>
+            <a id="logoutBtn" href="#">Logout</a>
+        </div>
+    </div>
+
+    <div class="container-profile">
+        <h1>Profile</h1>
+        <div class="profile-data">
+            <div class="user-data">
+                <h4>User Name: </h4>
+                <span id="user-name"></span>
+            </div>
+
+            <div class="user-data">
+                <h4>Date of birth: </h4>
+                <span id="user-dob"></span>
+
+            </div>
+
+            <div class="user-data">
+                <h4>Email: </h4>
+                <span id="user-email"></span>
+
+            </div>
+
+            <div class="user-data">
+                <h4>Flats Added: </h4>
+                <span id="user-addedflats"></span>
+
+            </div>
+
+        </div>
+        <script src="Profile.js"></script>
+        <script src="global.js"></script>
+
+    </div>
+
+</body>
+
+</html>

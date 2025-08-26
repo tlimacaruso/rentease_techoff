@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #EDF6F9FF;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.header {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+    background-color: #83C5BEFF;
+    padding: 0;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header img {
+    height: 3rem;
+    margin: 1.5rem;
+
+}
+
+#user-intro {
+    margin-left: 1rem;
+    font-family: "Epilogue", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #EDF6F9FF;
+}
+
+.right-header {
+    margin-left: auto;
+    padding-right: 1.5rem;
+    display: flex;
+}
+
+.right-header a {
+    margin-left: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 0.2rem 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+
+}
+
+.right-header a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF5E00FF;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: #FF5E00FF;
+}
+
+#logoutBtn {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF5E00FF;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: #FF5E00FF;
+}
+
+#logoutBtn:hover {
+    background-color: red;
+}
+
+h1 {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Paytone One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.registerinput {
+    display: flex;
+}
+
+#loginBtnHead {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF5E00FF;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: #FF5E00FF;
+}
+
+#loginBtnHead:hover {
+    background-color: red;
+}
+
+#registerBtnHead {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF5E00FF;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: #FF5E00FF;
+}
+
+#registerBtnHead:hover {
+    background-color: red;
+}
+
+@media (max-width: 600px) {
+    .sorting {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .filter {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input-add{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .input-add-radio{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .radios{
+        margin-top: 5px;
+    }
+
+    .right-header {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        width: 100%;
+        position: absolute;
+        top: 70px; /* altura do header */
+        left: 0;
+        padding: 1rem 0;
+      }
+
+      .right-header a {
+        margin: 0.5rem 1rem;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .right-header.active {
+        display: flex;
+      }
+}

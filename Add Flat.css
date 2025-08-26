@@ -1,0 +1,78 @@
+body{
+    background-image: url(img/background.png);
+    height: 100vh;
+}
+
+.container-add{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0px 20px 20px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #EDF6F9FF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+#add-flat-title{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+#flatForm{
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.input-add{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-add label{
+    margin-right: 10px;
+    width: 20%;
+}
+
+.input-add input{
+    width: 100%;
+}
+
+.input-add-radio{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-add-radio label{
+    margin-right: 10px;
+    width: 20%;
+}
+
+#addButton{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid #FF5E00FF;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: #FF5E00FF;
+    margin-top: 20px;
+}
+
+#addButton:hover{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border: 1px solid red;
+    padding: 0.2rem 1rem;
+    border-radius: 12px;
+    background-color: red;
+    cursor: pointer;
+}

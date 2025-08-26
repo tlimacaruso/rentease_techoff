@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Flat</title>
+
+    <link rel="stylesheet" href="Add Flat.css">
+    <link rel="stylesheet" href="global.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Paytone+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Oswald&family=Paytone+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="left-header">
+            <a href="index.html"><img src="app-logo.png"> <!--company logo--></a>
+            <span id="user-intro"></span>
+        </div>
+        <div class="right-header">
+            <a href="My Flats.html">All Flats</a>
+            <a href="Add Flat.html">Add Flat</a>
+            <a href="Profile.html">Profile</a>
+            <a id="logoutBtn" href="#">Logout</a>
+        </div>
+    </div>
+
+    <div class="container-add">
+        <h1 id="add-flat-title">Add New Flat</h1>
+
+        <form id="flatForm">
+
+            <div class="input-add">
+                <label for="city">City </label>
+            <input type="text" id="city" class="input" name="city" placeholder="Enter city name..."><br>
+            </div>
+           
+            <div class="input-add">
+            <label for="street">Street </label>
+            <input type="text" id="street" class="input" name="street" placeholder="Enter street name..."><br>
+            </div>
+
+            <div class="input-add">
+            <label for="number">Number </label>
+            <input type="number" id="number" class="input" name="number" placeholder="Enter door number..."><br>
+            </div>
+
+            <div class="input-add">
+            <label for="area">Area (sqm) </label>
+            <input type="number" id="area" class="input" name="area" placeholder="Enter flat area in sqm..."><br>
+            </div>
+
+            <div class="input-add-radio">
+            <label for="ac">AC </label>
+            <div class="radios">
+            <input type="radio" id="acyes" class="input" name="ac" value="✔️">Yes<br>
+            <input type="radio" id="acno" class="input" name="ac" value="✖️">No<br>
+            </div>
+            </div>
+
+            <div class="input-add">
+            <label for="year">Year </label>
+            <input type="number" id="year" class="input" name="year" placeholder="Enter building year..."><br>
+            </div>
+
+            <div class="input-add">
+            <label for="rent">Rent price </label>
+            <input type="number" id="rent" class="input" name="rent" placeholder="Enter rent price..."><br>
+            </div>
+
+            <div class="input-add">
+            <label for="avail">Available in </label>
+            <input type="date" id="avail" class="input" name="avail"><br>
+            </div>
+
+            <button type="button" id="addButton" onclick="addFlat()">Add flat</button>
+
+        </form>
+    </div>
+
+    <script src="global.js"></script>
+    <script src="MyFlats.js"></script>
+</body>
+
+</html>
